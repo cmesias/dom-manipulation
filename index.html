@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Document</title>
+        <title>DOM Manipulation</title>
         <script>
 
             // Gets the first h2 element from all h2 elements in the html document
@@ -33,7 +33,7 @@
                 const mainGreeting = document.getElementById("main-greeting-modify");
 
                 // Modify text
-                mainGreeting.innerText = "It's changed!";
+                mainGreeting.innerText = "It's changed................................!";
             }
 
             // Access and modify text
@@ -41,7 +41,27 @@
                 const mainGreeting = document.getElementById("main-greeting-textcontent");
 
                 // Modify text
-                mainGreeting.textContent = "It's changed!";
+                mainGreeting.textContent = "It's changed_______________________________________________!";
+            }
+
+            /////////////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////
+
+            // Modify HTML
+            function modifyHTMLById() {
+                const mainGreeting = document.getElementById("main-greeting-modifyme");
+
+                // Note this has a security concern, mostly will be using ".innerText" instead of ".innerHTML"
+                mainGreeting.innerHTML = "<article>Just changed~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!</article>";
+            }
+
+            // Modify CSS, change h1 color to red and background color to green
+            function modifyCSSById() {
+                const mainHeading = document.querySelector("h1");
+
+                mainHeading.style.color = "red";
+                mainHeading.style.backgroundColor = "green";
             }
 
         </script>
@@ -50,7 +70,7 @@
 
         <!-- Using querySelector to select elements by their element tag, class name or id -->
         <section>
-            <h1>Document Selectors</h1>
+            <h1 style="color: black; background-color: red;">DOM Manipulation</h1>
             <h2>Heading 2</h2>
             <h2>Heading 2</h2>
             <h2>Heading 2</h2>
@@ -59,8 +79,8 @@
             <h2>Heading 2</h2>
             <h2>Heading 2</h2>
             <h2>Heading 2</h2>
-            <button type="button" onclick="useMe1()">Click Me!</button>
-            <button type="button" onclick="useMe2()">Click Me!</button>
+            <button type="button" onclick="useMe1()">Print first h2 element from DOM</button>
+            <button type="button" onclick="useMe2()">Prints all h2 element from DOM</button>
         </section>
         
         <!-- Accessing text -->
@@ -101,6 +121,39 @@
 
         </section>
 
+        <hr>
+
+        <!-- Modifying HTML, using .innerHTML -->
+        <section>
+
+            <h2>Modifying HTML</h2>
+
+            <div id="main-greeting-modifyme">
+                <article>Hello World!</article>
+            </div>
+
+            <button type="button" onclick="modifyHTMLById()">Modify this html element!</button>
+        </section>
+
+        <!-- Modifying style (i.e. main.Heading.style.color = "red" )-->
+        <section>
+
+            <h2>Modifying h1 style</h2>
+
+            <div>
+                <article>Let's change the style of our h1 element</article>
+            </div>
+
+            <button type="button" onclick="modifyCSSById()">Click to modify h1 element!</button>
+        </section>
 
     </body>
+
+    <footer>
+        <hr>
+
+        <!-- Button that clears the console located in the footer -->
+        <h3>This clears the console.</h3>
+        <button type="button" onclick="console.clear()">Clear console</button>
+    </footer>
 </html>
