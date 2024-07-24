@@ -68,83 +68,92 @@
     </head>
     <body>
 
-        <!-- Using querySelector to select elements by their element tag, class name or id -->
-        <section>
-            <h1 style="color: black; background-color: red;">DOM Manipulation</h1>
-            <h2>Heading 2</h2>
-            <h2>Heading 2</h2>
-            <h2>Heading 2</h2>
-            <h2>Heading 2</h2>
-            <h2>Heading 2</h2>
-            <h2>Heading 2</h2>
-            <h2>Heading 2</h2>
-            <h2>Heading 2</h2>
-            <button type="button" onclick="useMe1()">Print first h2 element from DOM</button>
-            <button type="button" onclick="useMe2()">Prints all h2 element from DOM</button>
-        </section>
-        
-        <!-- Accessing text -->
-        <section>
-
-            <h2>Accessing Text</h2>
-
-            <div id="main-greeting-access">
-                <article>Hello World in accessing text section!</article>
-            </div>
-
-            <button type="button" onclick="accessTextById()">Access text!</button>
-        </section>
-
-        <!-- Modifying text -->
-        <section>
-            
-            <h2>Modifying text</h2>
-
-            <div id="main-greeting-modify">
-                <article>Hello World in modifying text section!</article>
-            </div>
-
-            <button type="button" onclick="modifyTextById()">Modify text!</button>
-
-        </section>
-
-        <!-- Using textContent, access and mody text -->
-        <section>
-
-            <h2>textContent</h2>
-
-            <div id="main-greeting-textcontent">
-                <article>This is the textcontent section!</article>
-            </div>
-
-            <button type="button" onclick="useTextContentById()">textContent text!</button>
-
-        </section>
+        <!-- Main Heading -->
+        <h1 style="color: black; background-color: red;">DOM Manipulation</h1>
 
         <hr>
 
-        <!-- Modifying HTML, using .innerHTML -->
+        <!-- Using querySelector to select elements by their element tag, class name or id -->
         <section>
-
-            <h2>Modifying HTML</h2>
-
-            <div id="main-greeting-modifyme">
-                <article>Hello World!</article>
-            </div>
-
-            <button type="button" onclick="modifyHTMLById()">Modify this html element!</button>
+            <h2>Using Query Selector in the DOM</h2>
+            <h3>Heading 2</h3>
+            <h3>Heading 2</h3>
+            <h3>Heading 2</h3>
+            <h3>Heading 2</h3>
+            <h3>Heading 2</h3>
+            <button type="button" onclick="useMe1()">Print first h2 element from DOM</button>
+            <button type="button" onclick="useMe2()">Prints all h2 element from DOM</button>
         </section>
+    
+        <hr>
 
-        <!-- Modifying style (i.e. main.Heading.style.color = "red" )-->
+        <!-- Modifying Elements in the DOM -->
         <section>
 
-            <h2>Modifying h1 style</h2>
-
-            <div>
-                <article>Let's change the style of our h1 element</article>
-            </div>
-
-            <button type="button" onclick="modifyCSSById()">Click to modify h1 element!</button>
+            <h2>Modifying Elements in the DOM</h2>
+        
+            <!-- Accessing text -->
+            <section>
+    
+                <h3>Accessing Text</h3>
+    
+                <div id="main-greeting-access">
+                    <article>Hello World in accessing text section!</article>
+                </div>
+    
+                <button type="button" onclick="accessTextById()">Access text!</button>
+            </section>
+    
+            <!-- Modifying text -->
+            <section>
+                
+                <h3>Modifying text</h3>
+    
+                <div id="main-greeting-modify">
+                    <article>Hello World in modifying text section!</article>
+                </div>
+    
+                <button type="button" onclick="modifyTextById()">Modify text!</button>
+    
+            </section>
+    
+            <!-- Using textContent, access and mody text -->
+            <section>
+    
+                <h3>textContent</h3>
+    
+                <div id="main-greeting-textcontent">
+                    <article>This is the textcontent section!</article>
+                </div>
+    
+                <button type="button" onclick="useTextContentById()">textContent text!</button>
+    
+            </section>
+    
+            <!-- Modifying HTML, using .innerHTML -->
+            <section>
+    
+                <h3>Modifying HTML</h3>
+    
+                <div id="main-greeting-modifyme">
+                    <article>Hello World!</article>
+                </div>
+    
+                <button type="button" onclick="modifyHTMLById()">Modify this html element!</button>
+            </section>
+    
+            <!-- Modifying style (i.e. main.Heading.style.color = "red" )-->
+            <section>
+    
+                <h3>Modifying h1 style</h3>
+    
+                <div>
+                    <article>Let's change the style of our h1 element</article>
+                </div>
+    
+                <button type="button" onclick="modifyCSSById()">Click to modify h1 element!</button>
+            </section>
+        
         </section>
 
     </body>
@@ -153,7 +162,7 @@
         <hr>
 
         <!-- Button that clears the console located in the footer -->
-        <h3>This clears the console.</h3>
+        <h4>This clears the console.</h4>
         <button type="button" onclick="console.clear()">Clear console</button>
     </footer>
 </html>
