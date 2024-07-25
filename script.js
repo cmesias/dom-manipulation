@@ -80,4 +80,7 @@ function setAttributeType() {
 
   // Set the first 'input' attribute 'type' to have the value of 'email' 
   specificInput.setAttribute("type", "email");
+
+  // Set the placeholder text
+  specificInput.setAttribute("placeholder", "type='email'");
 }
