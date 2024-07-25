@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DOM Manipulation</title>
+        <link rel="stylesheet" href="style.css">
         <script src="script.js"> </script>
     </head>
     <body>
@@ -14,7 +15,7 @@
         <hr>
 
         <!-- Using querySelector to select elements by their element tag, class name or id -->
-        <section>
+        <section class="modify-elements">
             <h2>Using Query Selector in the DOM</h2>
             <h3>Heading 2</h3>
             <h3>Heading 2</h3>
@@ -28,15 +29,16 @@
         <hr>
 
         <!-- Modifying Elements in the DOM -->
-        <section>
+        <section class="modify-elements">
 
             <h2>Modifying Elements in the DOM</h2>
 
             <!-- Accessing text -->
             <section>
     
-                <h3>Accessing Text</h3>
+                <h3>Accessing Text, document.getElementById("id")</h3>
                 <div id="main-greeting-access">
+                    <p>gets a unique element by id, using ".innerHTML"</p><br>
                     <article>Hello World in accessing text section!</article>
                 </div>
                 <button type="button" onclick="accessTextById()">Access text!</button>
@@ -45,7 +47,8 @@
             <!-- Modifying text -->
             <section>
                 
-                <h3>Modifying text</h3>
+                <h3>Modifying text, document.querySelector("id")</h3>
+                <p>gets the first element by id, tag or class name</p><br>
                 <div id="main-greeting-modify">
                     <article>Hello World in modifying text section!</article>
                 </div>
@@ -56,7 +59,8 @@
             <!-- Using textContent, access and mody text -->
             <section>
     
-                <h3>textContent</h3>
+                <h3>textContent, document.getElementById("id")</h3>
+                <p>gets a unique element by id, but uses ".textContent"</p><br>
                 <div id="main-greeting-textcontent">
                     <article>This is the textcontent section!</article>
                 </div>
@@ -67,7 +71,8 @@
             <!-- Modifying HTML, using .innerHTML -->
             <section>
     
-                <h3>Modifying HTML</h3>
+                <h3>Modifying HTML, document.getElementById("id")</h3>
+                <p>modifies a unique element by id, uses ".innerText"</p><br>
                 <div id="main-greeting-modifyme">
                     <article>Hello World!</article>
                 </div>
@@ -77,7 +82,8 @@
             <!-- Modifying style (i.e. main.Heading.style.color = "red" )-->
             <section>
     
-                <h3>Modifying h1 style</h3>
+                <h3>Modifying h1 style, document.querySelector("id")</h3>
+                <p>modifies an element's style by id, tag or class name</p><br>
                 <div>
                     <article>Let's change the style of our h1 element</article>
                 </div>
@@ -89,21 +95,25 @@
         <hr>
 
         <!-- Modifying Attributes -->
-        <section>
+        <section class="modify-elements">
 
-            <h2>Modifying Attributes</h2>
-            <div>
-                <article>We will be doing the third most common thing, which is modifying attributes for an element.</article><br>
-
-                <!-- Input -->
-                Enter your email: <input type="text" 
-                name="email" 
-                id="modify-to-email" 
-                placeholder="type='text'"
-                >
-            </div>
-            <button type="button" onclick="setAttributeType()">Set attribute to email</button>
-
+            <!-- Modifying input's type, uses ".setAttribute" -->
+            <section>
+                <h3>Modifying Attributes, document.getElementById("id")</h3>
+                <p>modifies an inputs's type by id, uses ".setAttribute"</p><br>
+                    
+                <div>
+                    <article>We will be doing the third most common thing, which is modifying attributes for an element.</article><br>
+                    
+                    <!-- Input -->
+                    Enter your email: <input type="text" 
+                    name="email" 
+                    id="modify-to-email" 
+                    placeholder="type='text'"
+                    >
+                </div>
+                <button type="button" onclick="setAttributeType()">Set attribute to email</button>
+            </section>
 
         </section>
 
