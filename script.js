@@ -84,3 +84,22 @@ function setAttributeType() {
   // Set the placeholder text
   specificInput.setAttribute("placeholder", "type='email'");
 }
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+/* Notes
+ * - .innerText will return what is displayed only to the user, things like css, javascript and "display: none" are not
+   - .textContent will return everything even elements that are hidden, it also returns css and javascript
+
+
+
+
+*/
