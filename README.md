@@ -1,4 +1,4 @@
-# springboard-006-dom-manipulation
-This will cover DOM manipulation!
+# dom-manipulation
+This will cover DOM manipulation! Made during my enrollment at Springboard.
 
-Live Website: https://cmesias.github.io/springboard-006-dom-manipulation/
+Live website: https://cmesias.github.io/springboard-006-dom-manipulation/
