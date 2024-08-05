@@ -1,0 +1,5 @@
+for an li element
+
+"li.child" in the console will return only node elements which is what we usually want
+
+"li.childNodes" will return multiples nodes such as elements but also text, comments, and the return key from the keyboard
